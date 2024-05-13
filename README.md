@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Yohoho Demo version
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is it?
 
-## Available Scripts
+A video game
 
-In the project directory, you can run:
+## What features does it have?
 
-### `yarn start`
+- Pirates
+- Yarr
+- Yarr matey
+- Treasures
+- Battles
+- Emotes
+- The most complex rendering system a simple web game with just canvas has ever seen (don't ask why)
+- Toxic emotes
+- SharkNado™
+- Fire
+- Holes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **FIRE IN THE HOLE**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Is it related to Yohoho.io?
 
-### `yarn test`
+THIS IS COMPLETELY DIFFERENT HOW COULD IT BE?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Todo (todo.md)
 
-### `yarn build`
+**Things (Demo):**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Classes - √
+- Better movement - √
+- Player to center, new rendering - √
+- Map generation
+- Swords - √
+- Fighting and dying - √
+  - Swing and dash animation
+  - Knockback
+- Emotes - √
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Things (After demo):**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- UI, start menu
+- Matchmaking
+- Pause menu
+- Console
+- Music and sounds
+- Stuff in the middle of the world map
+- Storm
+- Minimap
+- Voice & video chat
+- Natural disasters update (Sharknado)
+- Bots?
+- Login/account system?
+- Rational pirates problem
 
-### `yarn eject`
+**Images:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- PlayerSheets (4x4 players) 1024x1024px: (8/16) skinsheet.png
+  - PlayerIcon: 256x256px (facing up)
+- HandSheet (4x4 hands, one for each player) (3/16): handsheet.png
+  - Hand: 64x64px
+- SwordSheets: 4 swords, 2 versions (basic and glow) -> (1024x128px): swordsheet.png
+  - Sword: 256x64
+- Chatbubble: 256x256px chatbubble.png
+- Emotesheet: 512x512px emotesheet.png
+  - Emote: 128x128px
+  - 2 moving parts
+- Coin: 32x32px - √ coin.png
+- Treasure: 256x128px - √ treasure.png
+- Skull (onplayerdeath): 256x256px - √ skull.png
+- Tree: 384x384px - √ tree.png
+- Bush: 128x128px - √ bush1.png, bush2.png
+- Hut: 512x512px hut.png
+- Hutfloor: 512x512px - √ hutfloor.png
+- Rock: 64x64px - √ rock.png
