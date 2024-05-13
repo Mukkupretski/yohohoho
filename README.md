@@ -34,7 +34,6 @@ THIS IS COMPLETELY DIFFERENT HOW COULD IT BE?
 - Map generation
 - Swords - √
 - Fighting and dying - √
-  - Swing and dash animation
   - Knockback
 - Emotes - √
 
@@ -47,6 +46,7 @@ THIS IS COMPLETELY DIFFERENT HOW COULD IT BE?
 - Music and sounds
 - Stuff in the middle of the world map
 - Storm
+- Swing and dash animation
 - Minimap
 - Voice & video chat
 - Natural disasters update (Sharknado)
