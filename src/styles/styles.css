@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pirata+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  box-sizing: border-box;
+  user-select: none;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+:root {
+  --background: #22cc22;
+}
+.frontcanvas {
+  background-color: var(--background);
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.overlay {
+  background-color: hsla(0, 0%, 40%, 0.5);
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-rows: 2fr 0.5fr 1fr 1fr 2fr 1.5fr 1.5fr;
+  row-gap: 2vw;
+  column-gap: 3vh;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  padding-bottom: 40px;
+  padding-inline: 40px;
+}
+.logo {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  background-color: red;
+}
+.name {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+.character {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 2;
+  background-color: red;
+}
+.play {
+  grid-column: 2 / span 1;
+  grid-row: 6 / span 1;
+  background-color: red;
+}
+.how {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 3;
+}
+.patch {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 3;
+}
+.ad1 {
+  grid-column: 1 / span 1;
+  grid-row: 6 / span 2;
+}
+.ad2 {
+  grid-column: 3 / span 1;
+  grid-row: 6 / span 2;
+}
+p.copyright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  margin: 5px;
+}
+.how > div:first-child {
+  position: static;
+  transform: matrix(1, 0, 0.1, 1, -10, 0);
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  border: 5px solid gray;
+  border-radius: 5px;
+}
+div.how > div:nth-child(2) {
+  position: relative;
+  left: 5px;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 5px solid gray;
+  border-left: none;
+  border-radius: 5px;
+}
+.patch > div:first-child {
+  position: relative;
+  right: -25%;
+  transform: matrix(1, 0, -0.1, 1, 10, 0);
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  border: 5px solid gray;
+  border-radius: 5px;
+}
+html,
+body {
+  overflow: hidden;
+}
+div.patch > div:nth-child(2) {
+  position: relative;
+  right: 5px;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 5px solid gray;
+  border-right: none;
+  border-radius: 5px;
+}
+
+div h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.how div p {
+  overflow-y: scroll;
+  overflow-x: none;
+  padding-inline: 40px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+  height: calc(100% - 64px);
+  width: 95%;
+}
+ul > li {
+  list-style: none;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+ul > li > h4 {
+  font-weight: 700;
+}
+ul > li > p {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+}
+.patch > div > ul {
+  overflow-y: scroll;
+  overflow-x: none;
+  width: 95%;
+
+  height: calc(100% - 64px);
+}
+::-webkit-scrollbar-thumb {
+  width: 2px;
+
+  background-color: gray;
+}
+::-webkit-scrollbar-thumb:enabled {
+  width: 2px;
+
+  background-color: gray;
+}
+::-webkit-scrollbar {
+  width: 2px;
+
+  background-color: white;
+}
+.name {
+  display: flex;
+  justify-content: center;
+}
+.name > input {
+  height: 100%;
+  width: 75%;
+  border-radius: 50px;
+  appearance: none;
+  padding: 10px;
+  border: 2px solid gray;
+}
+.name > input:focus {
+  border-color: black;
+}
+.name > input:focus {
+  outline: none;
+}
+.ad > div > img {
+  position: relative;
+  display: block;
+  top: 0%;
+  width: 100%;
+  height: 60%;
+}
+.ad > div > div {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 40%;
+  background-color: white;
+}
+.ad > div {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ad > div > div.overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -100%;
+  opacity: 0;
+  background-color: black;
+}
+.ad > div > div.overlay:hover {
+  opacity: 0.4;
+}
+
+.ad > div > svg {
+  position: relative;
+  top: -200%;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ad > div > svg.right {
+  left: calc(100% - 10px);
+}
+.ad > div > svg:hover {
+  background-color: rgba(180, 180, 180, 0.8);
+}
+.ad > div > svg:hover > path {
+  stroke: rgb(55, 200, 210);
+}
+
+.ad > div > div > h3 {
+  font-size: 14px;
+  font-weight: 800;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.ad > div > div > p {
+  font-size: 10px;
+  color: gray;
+  padding-inline: 5px;
+}
